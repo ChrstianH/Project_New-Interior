@@ -95,9 +95,10 @@ header section .smallText {
   padding: 0 0 30px 0;
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .portfolio .container .row img {
-  width: 33%;
+  width: 31%;
   object-fit: cover;
 }
 
@@ -158,6 +159,84 @@ header section .smallText {
   color: white;
 }
 
+.blog {
+  padding: 60px 135px;
+}
+.blog .container {
+  padding: 0 15px;
+}
+.blog .container .header .headline {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .container .header .headline h2 {
+  font-family: AlegreyaSans;
+  font-size: 36px;
+}
+.blog .container .header .headline button {
+  font-family: "Helvetica";
+  font-size: 18px;
+  padding: 12px 18px;
+  line-height: 24px;
+}
+.blog .container .header .headline button a {
+  text-decoration: none;
+  color: black;
+}
+.blog .container .header p {
+  margin-top: 16px;
+  margin-bottom: 60px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 20px;
+}
+.blog .container .row {
+  padding: 0 0 30px 0;
+  display: flex;
+  align-items: flex-start;
+  margin: -15px;
+}
+.blog .container .row div {
+  padding: 0 15px;
+  width: 34%;
+}
+.blog .container .row div img {
+  width: 100%;
+  object-fit: contain;
+}
+.blog .container .row div h2 {
+  padding-top: 18px;
+  color: #3a4f52;
+  font-family: AlegreyaSans;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+.blog .container .row div p {
+  padding-top: 16px;
+  color: #6a6a6a;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
+  font-style: italic;
+}
+.blog .container .row div article {
+  padding-top: 19px;
+  padding-bottom: 24px;
+  color: #6a6a6a;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
+}
+.blog .container .row div a {
+  text-decoration: none;
+  color: #4da7ca;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
+}
+
+/* ********** Tablet Styles ********** */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .portfolio {
     padding: 60px 9px;
@@ -188,7 +267,14 @@ header section .smallText {
     flex-direction: column;
     gap: 20px;
   }
+  .blog {
+    padding: 60px 9px;
+  }
+  .blog .container {
+    padding: 0 15px;
+  }
 }
+/* ********** Mobile Styles ********** */
 @media screen and (max-width: 767px) {
   header section .bigText {
     font-size: 39.2px;
@@ -233,6 +319,24 @@ header section .smallText {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .blog {
+    padding: 60px 9px;
+  }
+  .blog .container {
+    padding: 0 15px;
+  }
+  .blog .container .row {
+    padding: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: -15px;
+    gap: 40px;
+  }
+  .blog .container .row div {
+    padding: 0 15px;
+    width: 100%;
   }
 }
 

@@ -98,8 +98,9 @@ header {
       padding: 0 0 30px 0;
       display: flex;
       gap: 30px;
+      justify-content: center;
       img {
-        width: 33%;
+        width: 31%;
         object-fit: cover;
       }
     }
@@ -163,6 +164,87 @@ header {
   }
 }
 
+.blog {
+  padding: 60px 135px;
+  .container {
+    padding: 0 15px;
+    .header {
+      .headline {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-family: AlegreyaSans;
+          font-size: 36px;
+        }
+        button {
+          font-family: "Helvetica";
+          font-size: 18px;
+          padding: 12px 18px;
+          line-height: 24px;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      p {
+        margin-top: 16px;
+        margin-bottom: 60px;
+        font-family: "Helvetica";
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .row {
+      padding: 0 0 30px 0;
+      display: flex;
+      align-items: flex-start;
+      margin: -15px;
+      div {
+        padding: 0 15px;
+        width: 34%;
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+        h2 {
+          padding-top: 18px;
+          color: #3a4f52;
+          font-family: AlegreyaSans;
+          font-size: 30px;
+          line-height: 1.1;
+          font-weight: 500;
+        }
+        p {
+          padding-top: 16px;
+          color: #6a6a6a;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: "Helvetica";
+          font-style: italic;
+        }
+        article {
+          padding-top: 19px;
+          padding-bottom: 24px;
+          color: #6a6a6a;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: "Helvetica";
+        }
+        a {
+          text-decoration: none;
+          color: #4da7ca;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: "Helvetica";
+        }
+      }
+    }
+  }
+}
+
+/* ********** Tablet Styles ********** */
+
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .portfolio {
     padding: 60px 9px;
@@ -194,7 +276,16 @@ header {
       }
     }
   }
+
+  .blog {
+    padding: 60px 9px;
+    .container {
+      padding: 0 15px;
+    }
+  }
 }
+
+/* ********** Mobile Styles ********** */
 
 @media screen and (max-width: 767px) {
   header {
@@ -246,6 +337,25 @@ header {
         display: flex;
         flex-direction: column;
         gap: 20px;
+      }
+    }
+  }
+
+  .blog {
+    padding: 60px 9px;
+    .container {
+      padding: 0 15px;
+      .row {
+        padding: 0 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: -15px;
+        gap: 40px;
+        div {
+          padding: 0 15px;
+          width: 100%;
+        }
       }
     }
   }

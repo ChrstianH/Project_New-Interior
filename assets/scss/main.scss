@@ -1,0 +1,252 @@
+@font-face {
+  font-family: AlegreyaSC;
+  src: url(../font/Alegreya_SC/AlegreyaSC-Regular.ttf);
+}
+@font-face {
+  font-family: NixieOne;
+  src: url(../font/Nixie_One/NixieOne-Regular.ttf);
+}
+@font-face {
+  font-family: AlegreyaSans;
+  src: url(../font/Alegreya_Sans/AlegreyaSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../img/image-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px;
+    h1 {
+      color: white;
+      font-family: AlegreyaSC;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+    img {
+      width: 24px;
+      height: 28px;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 316px 0 411px 0;
+
+    p {
+      color: white;
+      line-height: 1;
+    }
+    .bigText {
+      font-family: NixieOne;
+      font-size: 56px;
+    }
+    .smallText {
+      font-family: AlegreyaSC;
+      font-size: 22.4px;
+    }
+  }
+}
+
+.portfolio {
+  padding: 60px 135px;
+  .container {
+    padding: 0 15px;
+    .header {
+      .headline {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-family: AlegreyaSans;
+          font-size: 36px;
+        }
+        button {
+          font-family: "Helvetica";
+          font-size: 18px;
+          padding: 12px 18px;
+          line-height: 24px;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      p {
+        margin-top: 16px;
+        margin-bottom: 60px;
+        font-family: "Helvetica";
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .row {
+      padding: 0 0 30px 0;
+      display: flex;
+      gap: 30px;
+      img {
+        width: 33%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.services {
+  padding: 80px 135px;
+  background-image: url(../img/services-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  .container {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      gap: 16px;
+      h2 {
+        font-family: AlegreyaSans;
+        font-size: 36px;
+        line-height: 1.1;
+      }
+      p {
+        font-family: "Helvetica";
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .services-container {
+      display: flex;
+      gap: 30px;
+      padding: 0 15px 20px 15px;
+      justify-content: center;
+      .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-family: AlegreyaSans;
+          font-size: 30px;
+          line-height: 33px;
+          text-align: center;
+          color: white;
+        }
+        article {
+          padding: 16px 27px 0 27px;
+          font-family: "Helvetica";
+          font-size: 14px;
+          line-height: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .portfolio {
+    padding: 60px 9px;
+    .container {
+      padding: 0 15px;
+      .row {
+        padding: 0 0 30px 0;
+        display: flex;
+        gap: 30px;
+        img {
+          width: 31%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .services {
+    padding: 80px 9px;
+    .container {
+      padding: 50px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      .services-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    section {
+      .bigText {
+        font-size: 39.2px;
+      }
+      .smallText {
+        font-size: 16.8px;
+      }
+    }
+  }
+
+  .portfolio {
+    padding: 60px 0;
+    .container {
+      padding: 0 15px;
+      .header {
+        .headline {
+          display: flex;
+          justify-content: space-between;
+          h2 {
+            font-family: AlegreyaSans;
+            font-size: 36px;
+          }
+        }
+      }
+      .row {
+        padding: 0 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .services {
+    padding: 101px 0 59px 0;
+    .container {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      .services-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}

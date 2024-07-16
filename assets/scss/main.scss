@@ -243,6 +243,40 @@ header {
   }
 }
 
+.parallax {
+  padding: 80px 135px;
+  background-image: url(../img/parallax-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.25);
+    .quote {
+      color: white;
+      font-family: AlegreyaSans;
+      font-size: 36px;
+      line-height: 1.1;
+    }
+    button {
+      padding: 11px 17px;
+      border: 1px solid #fff;
+      background-color: rgba(0, 0, 0, 0.25);
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: Helvetica;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
 /* ********** Tablet Styles ********** */
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {

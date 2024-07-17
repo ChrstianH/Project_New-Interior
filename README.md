@@ -1,6 +1,6 @@
 # New Interior
 
-This project is part of a Web Developmewnt Bootcamp. I built it using HTML and SCSS.
+This project is part of a Web Development Bootcamp. I built it using HTML and SCSS.
 
 ## TechStack
 

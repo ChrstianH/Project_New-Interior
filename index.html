@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,14 +28,30 @@
             <p>Take a look at some of our recent products</p>
           </div>
           <div class="row">
-            <img src="./assets/img/row1_1.png" alt="" />
-            <img src="./assets/img/row1_2.png" alt="" />
-            <img src="./assets/img/row1_3.png" alt="" />
+            <div class="overflow">
+              <img src="./assets/img/row1_1.png" alt="Portfolio picture 1" />
+            </div>
+
+            <div class="overflow">
+              <img src="./assets/img/row1_2.png" alt="Portfolio picture 2" />
+            </div>
+
+            <div class="overflow">
+              <img src="./assets/img/row1_3.png" alt="Portfolio picture 3" />
+            </div>
           </div>
           <div class="row">
-            <img src="./assets/img/row2_1.png" alt="" />
-            <img src="./assets/img/row2_2.png" alt="" />
-            <img src="./assets/img/row2_3.png" alt="" />
+            <div class="overflow">
+              <img src="./assets/img/row2_1.png" alt="Portfolio picture 4" />
+            </div>
+
+            <div class="overflow">
+              <img src="./assets/img/row2_2.png" alt="Portfolio picture 5" />
+            </div>
+
+            <div class="overflow">
+              <img src="./assets/img/row2_3.png" alt="Portfolio picture 6" />
+            </div>
           </div>
         </div>
       </section>
@@ -172,6 +188,40 @@
           </div>
         </div>
       </section>
+      <section class="contact">
+        <div class="container">
+          <div class="header">
+            <h2>Contact Us</h2>
+            <p>Feel free to drop us a line.</p>
+          </div>
+          <form>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+            <textarea
+              name="messsage"
+              id="messsage"
+              placeholder="Write Something"
+              required
+            ></textarea>
+            <input type="submit" value="Say Hello" />
+          </form>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>&copy; Copyright New Interior</p>
+    </footer>
   </body>
 </html>

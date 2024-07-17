@@ -5,14 +5,18 @@ This project is part of a Web Developmewnt Bootcamp. I built it using HTML and S
 ## TechStack
 
 **Markup:** HTML 5
+
 **Styling** CSS 3 & SCSS
+
 **IDE** Visual Studio Code
+
 **Version Control** Github
+
 **Design** Figma
 
 ## Getting Started
 
-You can run this App in your Browser. there are no prerequisites necessary.
+You can run this App in your Browser. There are no prerequisites necessary.
 
 ## Deployment
 

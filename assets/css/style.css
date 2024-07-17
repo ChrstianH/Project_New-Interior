@@ -194,7 +194,8 @@ header section .smallText {
   padding: 0 0 30px 0;
   display: flex;
   align-items: flex-start;
-  margin: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .blog .container .row div {
   padding: 0 15px;
@@ -252,6 +253,7 @@ header section .smallText {
   background-color: rgba(0, 0, 0, 0.25);
 }
 .parallax .container .quote {
+  text-align: center;
   color: white;
   font-family: AlegreyaSans;
   font-size: 36px;
@@ -268,6 +270,57 @@ header section .smallText {
   font-family: Helvetica;
   font-size: 18px;
   line-height: 24px;
+}
+
+.testimonials {
+  padding: 60px 135px;
+}
+.testimonials .container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.testimonials .container .header h2 {
+  font-family: AlegreyaSans;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  color: #3a4f52;
+}
+.testimonials .container .header p {
+  margin-bottom: 60px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 20px;
+  color: #6a6a6a;
+}
+.testimonials .container .testimonials-container {
+  padding: 0 15px;
+  display: flex;
+  gap: 30px;
+}
+.testimonials .container .testimonials-container .testimonial {
+  padding-top: 25px;
+}
+.testimonials .container .testimonials-container .testimonial img {
+  width: 150px;
+  margin-left: calc(50% - 75px);
+}
+.testimonials .container .testimonials-container .testimonial article {
+  text-align: center;
+  padding: 17px 25px 23px 25px;
+  color: #6a6a6a;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
+}
+.testimonials .container .testimonials-container .testimonial p {
+  text-align: center;
+  color: #6a6a6a;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Helvetica";
 }
 
 /* ********** Tablet Styles ********** */
@@ -306,6 +359,17 @@ header section .smallText {
   }
   .blog .container {
     padding: 0 15px;
+  }
+  .parallax {
+    padding: 80px 9px;
+  }
+  .testimonials {
+    padding: 60px 9px;
+  }
+  .testimonials .container .testimonials-container {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
   }
 }
 /* ********** Mobile Styles ********** */
@@ -371,6 +435,23 @@ header section .smallText {
   .blog .container .row div {
     padding: 0 15px;
     width: 100%;
+  }
+  .parallax {
+    padding: 80px 0px;
+  }
+  .parallax .container .quote {
+    padding: 0 15px;
+  }
+  .testimonials {
+    padding: 60px 0px;
+  }
+  .testimonials .container .testimonials-container {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonials .container .testimonials-container .testimonial article {
+    padding: 17px 28px 23px 28px;
   }
 }
 

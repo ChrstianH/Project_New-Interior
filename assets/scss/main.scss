@@ -199,7 +199,8 @@ header {
       padding: 0 0 30px 0;
       display: flex;
       align-items: flex-start;
-      margin: -15px;
+      margin-left: -15px;
+      margin-right: -15px;
       div {
         padding: 0 15px;
         width: 34%;
@@ -257,6 +258,7 @@ header {
     padding: 20px 15px;
     background-color: rgba(0, 0, 0, 0.25);
     .quote {
+      text-align: center;
       color: white;
       font-family: AlegreyaSans;
       font-size: 36px;
@@ -272,6 +274,59 @@ header {
         font-family: Helvetica;
         font-size: 18px;
         line-height: 24px;
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding: 60px 135px;
+  .container {
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      h2 {
+        font-family: AlegreyaSans;
+        font-size: 36px;
+        line-height: 1.1;
+        text-align: center;
+        color: #3a4f52;
+      }
+      p {
+        margin-bottom: 60px;
+        font-family: "Helvetica";
+        font-size: 14px;
+        line-height: 20px;
+        color: #6a6a6a;
+      }
+    }
+    .testimonials-container {
+      padding: 0 15px;
+      display: flex;
+      gap: 30px;
+      .testimonial {
+        padding-top: 25px;
+        img {
+          width: 150px;
+          margin-left: calc(50% - 75px);
+        }
+        article {
+          text-align: center;
+          padding: 17px 25px 23px 25px;
+          color: #6a6a6a;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: "Helvetica";
+        }
+        p {
+          text-align: center;
+          color: #6a6a6a;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: "Helvetica";
+        }
       }
     }
   }
@@ -315,6 +370,21 @@ header {
     padding: 60px 9px;
     .container {
       padding: 0 15px;
+    }
+  }
+
+  .parallax {
+    padding: 80px 9px;
+  }
+
+  .testimonials {
+    padding: 60px 9px;
+    .container {
+      .testimonials-container {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
@@ -389,6 +459,31 @@ header {
         div {
           padding: 0 15px;
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .parallax {
+    padding: 80px 0px;
+    .container {
+      .quote {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 60px 0px;
+    .container {
+      .testimonials-container {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        .testimonial {
+          article {
+            padding: 17px 28px 23px 28px;
+          }
         }
       }
     }
